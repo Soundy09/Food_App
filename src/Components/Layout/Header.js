@@ -5,12 +5,12 @@ import { Fragment } from 'react';
 
 import HeaderCartButton from './HeaderCartButton';
 
-const Header = props => {
+const Header = (props) => {
     return
         <Fragment>
             <header className={classes.header}>
                 <h1>Rosoc's Diner!</h1>
-                <HeaderCartButton className={classes.button} />Cart 
+                <HeaderCartButton onClick={props.onShowCart} className={classes.button} />Cart 
                 <div classes={classes['main-image']}>
                     <img src={mealsImage} alt="rosco's favs"/>
                 </div>
