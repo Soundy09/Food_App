@@ -1,9 +1,9 @@
-import classes from './Cart.module.css';
+import classes from './Card.module.css';
 
 const Card = props => {
-    return 
+    return (
         <div className={classes.card}>{props.children}</div>
-
+    );
 };
 
 export default Card;

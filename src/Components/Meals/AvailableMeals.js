@@ -5,26 +5,26 @@ import Card from '../UI/Card';
 const DUMMY_MEAlS = [
     {
         id: 'm1',
-        name: 'Sushi',
-        description: 'Finest fish and veggies',
-        price: 22.99,
+        name: 'Roscos Smash Burger',
+        description: 'Fresh local organic beed smashed to roscos perfection',
+        price: 12.99,
       },
       {
         id: 'm2',
-        name: 'Schnitzel',
-        description: 'A german specialty!',
-        price: 16.5,
+        name: 'Deep Fried Chicken',
+        description: 'A classic dish with Roscos secret spice blend',
+        price: 12.50,
       },
       {
         id: 'm3',
-        name: 'Barbecue Burger',
-        description: 'American, raw, meaty',
+        name: 'Fish & Chips',
+        description: 'Double deep fried to perfection',
         price: 12.99,
       },
       {
         id: 'm4',
-        name: 'Green Bowl',
-        description: 'Healthy...and green...',
+        name: 'Spaghetti & Meatballs',
+        description: 'A signature Rosco dish passed down from generation to generation',
         price: 18.99,
       },
 ]
@@ -39,7 +39,7 @@ const AvailableMeals = () => {
         price={meal.price}
         />);
 
-    return 
+    return (
         <section className={classes.meals}>
             <Card>
             <ul>
@@ -47,7 +47,7 @@ const AvailableMeals = () => {
             </ul>
             </Card>
         </section>
-    
+    );
 };
 
 export default AvailableMeals;

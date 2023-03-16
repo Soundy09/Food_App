@@ -17,7 +17,7 @@ const MealItem = props => {
         });
     };
 
-    return
+    return  (
     <li className={classes.meal}>
         <div>
             <h3>{props.name}</h3>
@@ -25,9 +25,10 @@ const MealItem = props => {
                 <div className={classes.price}>{price}</div>
         </div>
         <div>
-            <MealItemForm onAddToCart={addToCartHandler}/>
+            <MealItemForm id={props.id} onAddToCart={addToCartHandler}/>
         </div>
     </li>
+    );
 };
 
 export default MealItem;

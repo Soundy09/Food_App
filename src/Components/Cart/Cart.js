@@ -21,7 +21,8 @@ const Cart = props => {
 
     const cartItems =  ( <ul className={classes['cart-items']}>
         {cartCtx.items.map((item) => (
-            <CartItem key={item.id} 
+            <CartItem 
+            key={item.id} 
             name={item.name} 
             amount={item.amount} 
             price={item.price}
@@ -32,7 +33,7 @@ const Cart = props => {
             </ul>
             );
 
-    return 
+    return (
         <Modal onClose={props.onClose}>
             {cartItems}
             <div className={classes.total}>
@@ -44,6 +45,7 @@ const Cart = props => {
                 {hasItems && <button className={classes.button}>Order</button>}
             </div>
         </Modal>
+    );
 };
 
 export default Cart;
